@@ -8,6 +8,8 @@ jobs:
         steps:
         - uses: actions/checkout@v4
         - run: ls -lrth
+        - uses: actions/setup-node@v4
+        - run: npm install
         - run: ls -larth ./js/
         - name: kkk
           uses: ./js/

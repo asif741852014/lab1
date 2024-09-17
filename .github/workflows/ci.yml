@@ -1,0 +1,12 @@
+name: abcd
+on:
+    push: 
+jobs:
+    abcdef:
+        runs-on: ubuntu-latest
+        name: avc
+        steps:
+        - name: kkk
+          uses: ./
+          with:
+            demo: "asif first"

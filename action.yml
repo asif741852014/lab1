@@ -1,0 +1,10 @@
+name: asif
+inputs:
+  demo:
+    required: true
+    type: string
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+  - ${{ inputs.demo }}

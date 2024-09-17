@@ -1,0 +1,1 @@
+echo "just a simple play from $1"

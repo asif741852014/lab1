@@ -8,9 +8,9 @@ jobs:
         steps:
         - uses: actions/checkout@v4
         - run: ls -lrth
+        - run: ls -larth ./js/
         - name: kkk
-          continue-on-error: true
-          uses: ./
+          uses: ./js/
           with:
-            demo: "asif first"
-        - run: ls -larth
+            message: "asif first"
+        

@@ -4,6 +4,7 @@ on:
   workflow_run: 
     workflows: ci.yml
     types: completed
+    
 
 jobs:
   create-tag:

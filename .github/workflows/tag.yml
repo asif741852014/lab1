@@ -2,7 +2,7 @@ name: Tag Commit
 
 on:
   workflow_run: 
-    workflows: ["ci.yml"]
+    workflows: ["abcd"]
     types:
     - completed
 

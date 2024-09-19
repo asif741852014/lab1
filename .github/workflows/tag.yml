@@ -2,9 +2,10 @@ name: Tag Commit
 
 on:
   workflow_run: 
-    workflows: ci.yml
-    types: completed
-    
+    workflows: ["ci.yml"]
+    types:
+    - completed
+
 
 jobs:
   create-tag:

@@ -1,0 +1,27 @@
+name: Tag Commit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-tag:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Create a tag using GitHub CLI
+      - name: Create Tag
+        run: |
+          TAG_NAME="v1.0.$(date +%s)"  # Example tag format: v1.0.<timestamp>
+          echo "Creating tag $TAG_NAME"
+          git tag $TAG_NAME
+          git push origin $TAG_NAME
+
+      # Optionally verify the tag creation
+      - name: Verify Tag
+        run: git tag --list

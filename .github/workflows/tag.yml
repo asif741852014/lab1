@@ -5,8 +5,6 @@ on:
     workflows: ["abcd"]
     types:
     - completed
-
-
 jobs:
   create-tag:
     runs-on: ubuntu-latest

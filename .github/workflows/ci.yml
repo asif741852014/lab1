@@ -16,4 +16,3 @@ jobs:
           uses: ./js/
           with:
             message: "asif first"
-        

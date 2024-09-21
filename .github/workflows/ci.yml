@@ -11,7 +11,7 @@ jobs:
         - uses: actions/setup-node@v4
         - run: ls -lrth
         - run: npm install
-        - run: ls -larth ./js/
+        - run: ls -larth 
         - name: kkk
           uses: ./js/
           with:
